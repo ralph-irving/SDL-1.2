@@ -1135,6 +1135,7 @@ void FB_InitOSKeymap(_THIS)
 	    keymap[i] = SDLK_RALT;
 	    break;
 	  case 127:
+	  case 139:
 	    keymap[i] = SDLK_MENU;
 	    break;
 	  case 113:
@@ -1155,6 +1156,10 @@ void FB_InitOSKeymap(_THIS)
 	    break;
 	  case 145:
 	    keymap[i] = SDLK_RightMouse;
+	    break;
+	  /* Justboom Smart USB remote BACK */
+	  case 158:
+	    keymap[i] = SDLK_END;
 	    break;
 	  case 163:
 	    keymap[i] = SDLK_AudioNext;
@@ -1288,5 +1293,15 @@ static SDL_keysym *TranslateKey(int scancode, SDL_keysym *keysym)
 			keysym->unicode = KVAL(vga_keymap[map][scancode]);
 		}
 	}
+
+	if ( keysym->sym > SDLK_LAST )
+	{
+		/* Justboom Smart USB remote OK */
+		if ( keysym->sym == 192088929 )
+			keysym->sym = SDLK_RETURN;
+		else
+			keysym->sym = SDLK_UNKNOWN;
+	}
+
 	return(keysym);
 }

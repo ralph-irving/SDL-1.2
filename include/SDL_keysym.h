@@ -296,6 +296,74 @@ typedef enum {
 	SDLK_UNDO		= 322,		/**< Atari keyboard has Undo */
         /*@}*/
 
+    /* "Internet"/"MultiMedia" keyboards */
+    SDLK_Standby            = 323,
+    SDLK_AudioLowerVolume   = 324,
+    SDLK_AudioMute          = 325,
+    SDLK_AudioRaiseVolume   = 326,
+    SDLK_AudioPlay          = 327,
+    SDLK_AudioStop          = 328,
+    SDLK_AudioPrev          = 329,
+    SDLK_AudioNext          = 330,
+    SDLK_HomePage           = 331,
+    SDLK_Mail               = 332,
+    SDLK_Start              = 333,
+    SDLK_Search             = 334,
+    SDLK_AudioRecord        = 325,
+
+    SDLK_Calculator         = 326,
+    SDLK_Memo               = 327,
+    SDLK_ToDoList           = 328,
+    SDLK_Calendar           = 329,
+    SDLK_PowerDown          = 330,
+    SDLK_ContrastAdjust     = 331,
+    SDLK_RockerUp           = 332,
+    SDLK_RockerDown         = 333,
+    SDLK_RockerEnter        = 334,
+
+    SDLK_Back               = 335,
+    SDLK_Forward            = 336,
+    SDLK_Stop               = 337,
+    SDLK_Refresh            = 338,
+    SDLK_PowerOff           = 339,
+    SDLK_WakeUp             = 340,
+    SDLK_Eject              = 341,
+    SDLK_ScreenSaver        = 342,
+    SDLK_WWW                = 343,
+    SDLK_Sleep              = 344,
+    SDLK_Favorites          = 345,
+    SDLK_AudioPause         = 346,
+    SDLK_AudioMedia         = 347,
+    SDLK_MyComputer         = 348,
+    SDLK_VendorHome         = 349,
+    SDLK_LightBulb          = 350,
+    SDLK_Shop               = 351,
+    SDLK_History            = 352,
+    SDLK_OpenURL            = 353,
+    SDLK_AddFavorite        = 354,
+    SDLK_HotLinks           = 355,
+    SDLK_BrightnessAdjust   = 356,
+
+    SDLK_Launch0            = 357,
+    SDLK_Launch1            = 358,
+    SDLK_Launch2            = 359,
+    SDLK_Launch3            = 360,
+    SDLK_Launch4            = 361,
+    SDLK_Launch5            = 362,
+    SDLK_Launch6            = 363,
+    SDLK_Launch7            = 364,
+    SDLK_Launch8            = 365,
+    SDLK_Launch9            = 366,
+    SDLK_LaunchA            = 367,
+    SDLK_LaunchB            = 368,
+    SDLK_LaunchC            = 369,
+    SDLK_LaunchD            = 370,
+    SDLK_LaunchE            = 371,
+    SDLK_LaunchF            = 372,
+
+    SDLK_LeftMouse          = 373,
+    SDLK_RightMouse         = 374,
+
 	/* Add any other keys here */
 
 	SDLK_LAST
@@ -322,5 +390,7 @@ typedef enum {
 #define KMOD_SHIFT	(KMOD_LSHIFT|KMOD_RSHIFT)
 #define KMOD_ALT	(KMOD_LALT|KMOD_RALT)
 #define KMOD_META	(KMOD_LMETA|KMOD_RMETA)
+
+#define SDL_MEDIAKEYS_DEFINED
 
 #endif /* _SDL_keysym_h */
